@@ -3,7 +3,33 @@ export default {
   darkMode: 'class',
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        Roboto: ['Roboto'],
+        PermanentMarker: ['Permanent Marker'],
+        ShadowsIntoLightTwo: ['Shadows Into Light Two']
+      }
+    }
   },
-  plugins: []
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.text-stroke-1': {
+          '-webkit-text-stroke-width': '1px',
+          '-webkit-text-stroke-color': 'black'
+        },
+        '.text-stroke-2': {
+          '-webkit-text-stroke-width': '2px',
+          '-webkit-text-stroke-color': 'black'
+        },
+        '.text-stroke-3': {
+          '-webkit-text-stroke-width': '3px',
+          '-webkit-text-stroke-color': 'black'
+        }
+        // Agrega más utilidades según sea necesario
+      }
+
+      addUtilities(newUtilities, ['responsive', 'hover'])
+    }
+  ]
 }

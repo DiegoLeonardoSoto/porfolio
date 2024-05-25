@@ -7,14 +7,14 @@ import { Projects } from './sections/Projects'
 
 function App() {
   return (
-    <>
+    <div className="font-Roboto">
       <Navbar />
       <Hero />
       <About />
       <Projects />
       <Contact />
       <Footer />
-    </>
+    </div>
   )
 }
 
