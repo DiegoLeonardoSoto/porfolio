@@ -8,8 +8,10 @@ import {
   PaperPlane,
   Send,
   SubTitleLine,
-  HeroNameArrow
+  HeroNameArrow,
+  DownloadCVArrow
 } from '../assets'
+import { DownloadCvButton } from '../components/DownloadCvButton'
 
 import { LayoutSection } from '../layout/LayoutSection'
 
@@ -43,6 +45,9 @@ export const Hero = () => {
             <Send color="white" />
           </button>
         </div>
+
+        <DownloadCvButton />
+        <DownloadCVArrow />
       </div>
 
       <Bulb />
