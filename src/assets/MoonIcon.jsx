@@ -4,6 +4,7 @@ const MoonIcon = ({ width }) => {
       width={width}
       height={width}
       viewBox="0 0 24 24"
+      className="opacity-40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >

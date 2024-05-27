@@ -2,3 +2,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.clip::after {
+  clip-path: circle(0%);
+  transition: 0.2s;
+}
+
+.clip:hover::after {
+  clip-path: circle(100%);
+}
