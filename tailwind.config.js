@@ -8,6 +8,9 @@ export default {
         Roboto: ['Roboto'],
         PermanentMarker: ['Permanent Marker'],
         ShadowsIntoLightTwo: ['Shadows Into Light Two']
+      },
+      colors: {
+        primary: ['#fddf28']
       }
     }
   },
