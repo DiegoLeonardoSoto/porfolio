@@ -1,9 +1,10 @@
-export const LayoutSection = ({ children, color = '' }) => {
+export const LayoutSection = ({ children, color = '', name }) => {
   return (
-    <div
+    <section
+      id={name}
       className={`w-screen overflow-hidden h-screen ${color} flex justify-center items-center relative`}
     >
       {children}
-    </div>
+    </section>
   )
 }

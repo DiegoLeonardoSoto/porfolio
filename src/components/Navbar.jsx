@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { ToggleDarkMode } from '../components/ToggleDarkMode'
+import { Link, animateScroll as scroll } from 'react-scroll'
 
 export const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false)
@@ -55,48 +56,59 @@ export const Navbar = () => {
           id="navbar-sticky"
         >
           <ul className="flex flex-col gap-9 p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li className="relative after:content-[''] after:bg-primary-0 after:h-[130%] after:-left-[15%] after:-top-[15%] after:z-0 after:absolute after:w-[0%] hover:after:w-[130%] after:duration-200">
-              <a
-                href="#"
-                className="sticky z-10 block py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:text-white "
+            <li>
+              <Link
+                activeClass="after:w-[130%]"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="hero"
+                className="relative after:content-[''] after:bg-primary-0 after:h-[130%] after:-left-[15%] after:-top-[15%] after:-z-10 after:absolute after:w-[0%] hover:after:w-[130%] after:duration-200 z-10 block py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:text-white dark:hover:text-black"
               >
                 Inicio
-              </a>
+              </Link>
             </li>
-            <li
-              style={{ marginLeft: '0' }}
-              className="relative  after:content-[''] after:bg-primary-0 after:h-[130%] after:-left-[15%] after:-top-[15%] after:z-0 after:absolute after:w-[0%] hover:after:w-[130%] after:duration-200"
-            >
-              <a
-                href="#"
-                className="sticky z-10 py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:text-white "
+            <li style={{ marginLeft: '0' }}>
+              <Link
+                activeClass="after:w-[130%]"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="about"
+                className="relative  after:content-[''] after:bg-primary-0 after:h-[130%] after:-left-[15%] after:-top-[15%] after:-z-10 after:absolute after:w-[0%] hover:after:w-[130%] after:duration-200 z-10 py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:text-white dark:hover:text-black"
               >
                 Sobre mi
-              </a>
+              </Link>
             </li>
 
-            <li
-              style={{ marginLeft: '0' }}
-              className="relative  after:content-[''] after:bg-primary-0 after:h-[130%] after:-left-[15%] after:-top-[15%] after:z-0 after:absolute after:w-[0%] hover:after:w-[130%] after:duration-200"
-            >
-              <a
-                href="#"
-                className="sticky z-10 py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:text-white "
+            <li style={{ marginLeft: '0' }}>
+              <Link
+                activeClass="after:w-[130%]"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="projects"
+                className="relative  after:content-[''] after:bg-primary-0 after:h-[130%] after:-left-[15%] after:-top-[15%] after:-z-10 after:absolute after:w-[0%] hover:after:w-[130%] after:duration-200 z-10 py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:text-white dark:hover:text-black"
               >
                 Proyectos
-              </a>
+              </Link>
             </li>
 
-            <li
-              style={{ marginLeft: '0' }}
-              className="relative  after:content-[''] after:bg-primary-0 after:h-[130%] after:-left-[15%] after:-top-[15%] after:z-0 after:absolute after:w-[0%] hover:after:w-[130%] after:duration-200"
-            >
-              <a
-                href="#"
-                className="sticky z-10 py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:text-white "
+            <li style={{ marginLeft: '0' }}>
+              <Link
+                activeClass="after:w-[130%]"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="contact"
+                className="relative  after:content-[''] after:bg-primary-0 after:h-[130%] after:-left-[15%] after:-top-[15%] after:-z-10 after:absolute after:w-[0%] hover:after:w-[130%] after:duration-200 z-10 py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:text-white dark:hover:text-black"
               >
                 Contacto
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
