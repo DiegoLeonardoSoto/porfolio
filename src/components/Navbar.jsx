@@ -6,7 +6,7 @@ export const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false)
 
   return (
-    <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 shadow-lg">
+    <nav className="bg-white dark:bg-gray-900 fixed w-full z-50 top-0 start-0 shadow-lg">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* logo */}
         <a
