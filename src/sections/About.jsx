@@ -2,14 +2,15 @@ import { UnderlineName } from '../assets'
 import { AboutLineDown } from '../assets/AboutLineDown'
 import { AboutLineUp } from '../assets/AboutLineUp'
 import { SectionHighlight } from '../assets/SectionHighlight'
-import { InfiniteScroll } from '../components/InfiniteScroll'
+import { TechStackBar } from '../components/TechStackBar'
+import { ToolBar } from '../components/ToolBar'
 import { LayoutSection } from '../layout/LayoutSection'
 
 export const About = () => {
   return (
     <LayoutSection
       name={'about'}
-      styles={'shadow-[0_0_43px_-10px_rgba(0,0,0,0.75)] text-neutral-600'}
+      styles={'shadow-[0_0_43px_-10px_rgba(0,0,0,0.75)] text-neutral-600 py-16'}
     >
       <div className="z-40 flex w-3/4 gap-12 mb-32 ">
         <div className="flex-1">
@@ -19,7 +20,6 @@ export const About = () => {
             </h1>
             <UnderlineName />
           </div>
-
           <div className="flex flex-col gap-3 ">
             <p>
               Hola, soy Diego Soto, tengo 25 años y soy de Argentina. Aunque
@@ -112,8 +112,8 @@ export const About = () => {
         </div>
       </div>
 
-      <InfiniteScroll />
-      <InfiniteScroll />
+      <TechStackBar />
+      <ToolBar />
 
       <AboutLineUp />
       <AboutLineDown />

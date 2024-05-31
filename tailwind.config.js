@@ -11,6 +11,15 @@ export default {
       },
       colors: {
         primary: ['#fddf28']
+      },
+      keyframes: {
+        scroll: {
+          to: { transform: 'translate( calc(-50% - 2.5rem) )' }
+        }
+      },
+      animation: {
+        scroll: 'scroll 90s linear forwards infinite',
+        scroll_reverse: 'scroll 90s linear reverse infinite '
       }
     }
   },
