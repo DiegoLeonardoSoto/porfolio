@@ -12,14 +12,17 @@ export const About = () => {
       name={'about'}
       styles={'shadow-[0_0_43px_-10px_rgba(0,0,0,0.75)] text-neutral-600 py-16'}
     >
-      <div className="z-40 flex w-3/4 gap-12 mb-32 ">
-        <div className="flex-1">
+      <div className="z-40 grid grid-cols-4 gap-4 gap-y-6 w-3/4 mb-32 ">
+        <div className="col-span-4">
           <div className="inline-block relative mb-4">
             <h1 className="font-PermanentMarker text-5xl text-white drop-shadow-[4px_4px_0px_rgba(0,0,0,1)] text-stroke-1 my-2">
               Sobre mi
             </h1>
             <UnderlineName />
           </div>
+        </div>
+
+        <div className="col-span-2 pr-24">
           <div className="flex flex-col gap-3 ">
             <p>
               Hola, soy Diego Soto, tengo 25 años y soy de Argentina. Aunque
@@ -43,7 +46,7 @@ export const About = () => {
           </div>
         </div>
 
-        <div className="flex-1 flex flex-col gap-4">
+        <div className="col-span-2 flex flex-col gap-4">
           <div>
             <div className="inline-block relative mb-4">
               <h3 className="font-PermanentMarker text-lg text-black">
@@ -110,10 +113,15 @@ export const About = () => {
             </div>
           </div>
         </div>
-      </div>
 
-      <TechStackBar />
-      <ToolBar />
+        <div className="col-span-4  mt-40">
+          <TechStackBar />
+        </div>
+
+        <div className="col-span-4 mt-6">
+          <ToolBar />
+        </div>
+      </div>
 
       <AboutLineUp />
       <AboutLineDown />

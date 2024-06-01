@@ -36,6 +36,11 @@ export const ToolBar = () => {
       imgSrc:
         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg',
       alt: 'firebase-logo'
+    },
+    {
+      imgSrc:
+        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg',
+      alt: 'figma-logo'
     }
   ]
   return (
