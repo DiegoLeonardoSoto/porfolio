@@ -5,18 +5,24 @@ import { Link, animateScroll as scroll } from 'react-scroll'
 export const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false)
 
+  const handleScrollToTop = () => {
+    scroll.scrollToTop()
+  }
+
   return (
     <nav className="bg-white dark:bg-gray-900 fixed w-full z-50 top-0 start-0 shadow-lg">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* logo */}
-        <a
+        <Link
+          onClick={handleScrollToTop}
+          to=""
           href="blank"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <span className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">
             DS.
           </span>
-        </a>
+        </Link>
 
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <ToggleDarkMode />
@@ -64,7 +70,7 @@ export const Navbar = () => {
                 offset={-70}
                 duration={500}
                 to="hero"
-                className="relative after:content-[''] after:bg-primary-0 after:h-[130%] after:-left-[15%] after:-top-[15%] after:-z-10 after:absolute after:w-[0%] hover:after:w-[130%] after:duration-200 z-10 block py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:text-white dark:hover:text-black"
+                className="relative cursor-pointer after:content-[''] after:bg-primary-0 after:h-[130%] after:-left-[15%] after:-top-[15%] after:-z-10 after:absolute after:w-[0%] hover:after:w-[130%] after:duration-200 z-10 block py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:text-white dark:hover:text-black"
               >
                 Inicio
               </Link>
@@ -77,7 +83,7 @@ export const Navbar = () => {
                 offset={-70}
                 duration={500}
                 to="about"
-                className="relative  after:content-[''] after:bg-primary-0 after:h-[130%] after:-left-[15%] after:-top-[15%] after:-z-10 after:absolute after:w-[0%] hover:after:w-[130%] after:duration-200 z-10 py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:text-white dark:hover:text-black"
+                className="relative cursor-pointer after:content-[''] after:bg-primary-0 after:h-[130%] after:-left-[15%] after:-top-[15%] after:-z-10 after:absolute after:w-[0%] hover:after:w-[130%] after:duration-200 z-10 py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:text-white dark:hover:text-black"
               >
                 Sobre mi
               </Link>
@@ -91,7 +97,7 @@ export const Navbar = () => {
                 offset={-70}
                 duration={500}
                 to="projects"
-                className="relative  after:content-[''] after:bg-primary-0 after:h-[130%] after:-left-[15%] after:-top-[15%] after:-z-10 after:absolute after:w-[0%] hover:after:w-[130%] after:duration-200 z-10 py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:text-white dark:hover:text-black"
+                className="relative cursor-pointer after:content-[''] after:bg-primary-0 after:h-[130%] after:-left-[15%] after:-top-[15%] after:-z-10 after:absolute after:w-[0%] hover:after:w-[130%] after:duration-200 z-10 py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:text-white dark:hover:text-black"
               >
                 Proyectos
               </Link>
@@ -105,7 +111,7 @@ export const Navbar = () => {
                 offset={-70}
                 duration={500}
                 to="contact"
-                className="relative  after:content-[''] after:bg-primary-0 after:h-[130%] after:-left-[15%] after:-top-[15%] after:-z-10 after:absolute after:w-[0%] hover:after:w-[130%] after:duration-200 z-10 py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:text-white dark:hover:text-black"
+                className="relative cursor-pointer after:content-[''] after:bg-primary-0 after:h-[130%] after:-left-[15%] after:-top-[15%] after:-z-10 after:absolute after:w-[0%] hover:after:w-[130%] after:duration-200 z-10 py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:text-white dark:hover:text-black"
               >
                 Contacto
               </Link>

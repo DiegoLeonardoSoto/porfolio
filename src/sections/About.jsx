@@ -1,9 +1,18 @@
-import { UnderlineName } from '../assets'
-import { AboutLineDown } from '../assets/AboutLineDown'
-import { AboutLineUp } from '../assets/AboutLineUp'
-import { SectionHighlight } from '../assets/SectionHighlight'
-import { TechStackBar } from '../components/TechStackBar'
-import { ToolBar } from '../components/ToolBar'
+import {
+  GithubIcon,
+  LinkedinIcon,
+  Send,
+  UnderlineName,
+  AboutLineDown,
+  AboutLineUp,
+  SectionHighlight,
+  WhatsappIcon,
+  ContactMeDraw,
+  TechStackDraw,
+  ToolsDraw
+} from '../assets'
+
+import { SocialMediaButton, TechStackBar, ToolBar } from '../components'
 import { LayoutSection } from '../layout/LayoutSection'
 
 export const About = () => {
@@ -105,21 +114,28 @@ export const About = () => {
               </h3>
               <SectionHighlight />
             </div>
-            <div className="flex justify-between">
-              <button>Github</button>
-              <button>Linkedin</button>
-              <button>Whatsapp</button>
-              <button>Email</button>
+            <div className="flex justify-between my-4">
+              <SocialMediaButton name={'Github'} icon={<GithubIcon />} />
+              <SocialMediaButton
+                name={'Linkedin'}
+                icon={<LinkedinIcon color="#000" />}
+              />
+              <SocialMediaButton name={'Whatsapp'} icon={<WhatsappIcon />} />
+              <SocialMediaButton name={'Email'} icon={<Send color="black" />} />
             </div>
+
+            <ContactMeDraw />
           </div>
         </div>
 
-        <div className="col-span-4  mt-40">
+        <div className="col-span-4  mt-20 relative">
           <TechStackBar />
+          <TechStackDraw />
         </div>
 
-        <div className="col-span-4 mt-6">
+        <div className="col-span-4 mt-6 relative">
           <ToolBar />
+          <ToolsDraw />
         </div>
       </div>
 

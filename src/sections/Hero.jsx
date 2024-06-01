@@ -33,20 +33,6 @@ export const Hero = () => {
           <h2 className="text-xl">FRONTEND DEVELOPER</h2>
         </SubTitleLine>
 
-        <div className="flex gap-7 mt-7">
-          <button className="bg-black w-11 rounded-full p-2">
-            <GithubIcon color="white" />
-          </button>
-
-          <button className="bg-[#0076b2] w-11 rounded-full p-2">
-            <LinkedinIcon />
-          </button>
-
-          <button className="bg-red-600 w-11 rounded-full p-2">
-            <Send color="white" />
-          </button>
-        </div>
-
         <DownloadCvButton />
         <DownloadCVArrow />
       </div>

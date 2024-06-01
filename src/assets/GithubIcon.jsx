@@ -1,7 +1,7 @@
 export const GithubIcon = ({ color = '#181616' }) => {
   return (
-    <svg className="w-full" viewBox="0 0 128 128">
-      <g fill={color}>
+    <svg className="w-full " viewBox="0 0 128 128">
+      <g fill={color} className="group-hover:fill-white">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
