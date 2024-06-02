@@ -9,22 +9,22 @@ import {
   WhatsappIcon,
   ContactMeDraw,
   TechStackDraw,
-  ToolsDraw
-} from '../assets'
+  ToolsDraw,
+} from "../assets";
 
-import { SocialMediaButton, TechStackBar, ToolBar } from '../components'
-import { LayoutSection } from '../layout/LayoutSection'
+import { SocialMediaButton, TechStackBar, ToolBar } from "../components";
+import { LayoutSection } from "../layout/LayoutSection";
 
 export const About = () => {
   return (
     <LayoutSection
-      name={'about'}
-      styles={'shadow-[0_0_43px_-10px_rgba(0,0,0,0.75)] text-neutral-600 py-16'}
+      name={"about"}
+      styles={"shadow-[0_0_43px_-10px_rgba(0,0,0,0.75)] text-neutral-600 py-28"}
     >
-      <div className="z-40 grid grid-cols-4 gap-4 gap-y-6 w-3/4 mb-32 ">
+      <div className="z-40 mb-32 grid w-3/4 grid-cols-4 gap-4 gap-y-6">
         <div className="col-span-4">
-          <div className="inline-block relative mb-4">
-            <h1 className="font-PermanentMarker text-5xl text-white drop-shadow-[4px_4px_0px_rgba(0,0,0,1)] text-stroke-1 my-2">
+          <div className="relative mb-4 inline-block">
+            <h1 className="my-2 font-PermanentMarker text-5xl text-white drop-shadow-[4px_4px_0px_rgba(0,0,0,1)] text-stroke-1">
               Sobre mi
             </h1>
             <UnderlineName />
@@ -32,7 +32,7 @@ export const About = () => {
         </div>
 
         <div className="col-span-2 pr-24">
-          <div className="flex flex-col gap-3 ">
+          <div className="flex flex-col gap-3">
             <p>
               Hola, soy Diego Soto, tengo 25 años y soy de Argentina. Aunque
               siempre me gustaron el dibujo y el diseño, decidí entrar en el
@@ -57,7 +57,7 @@ export const About = () => {
 
         <div className="col-span-2 flex flex-col gap-4">
           <div>
-            <div className="inline-block relative mb-4">
+            <div className="relative mb-4 inline-block">
               <h3 className="font-PermanentMarker text-lg text-black">
                 Eduacion
               </h3>
@@ -85,7 +85,7 @@ export const About = () => {
           </div>
           <div className="flex">
             <div className="flex-1">
-              <div className="inline-block relative mb-4">
+              <div className="relative mb-4 inline-block">
                 <h3 className="font-PermanentMarker text-lg text-black">
                   Idioma
                 </h3>
@@ -97,7 +97,7 @@ export const About = () => {
             </div>
 
             <div className="flex-[2]">
-              <div className="inline-block relative mb-4">
+              <div className="relative mb-4 inline-block">
                 <h3 className="font-PermanentMarker text-lg text-black">
                   Hobbys
                 </h3>
@@ -108,32 +108,32 @@ export const About = () => {
           </div>
 
           <div>
-            <div className="inline-block relative mb-4">
+            <div className="relative mb-4 inline-block">
               <h3 className="font-PermanentMarker text-lg text-black">
                 Contacto
               </h3>
               <SectionHighlight />
             </div>
-            <div className="flex justify-between my-4">
-              <SocialMediaButton name={'Github'} icon={<GithubIcon />} />
+            <div className="my-4 flex justify-between">
+              <SocialMediaButton name={"Github"} icon={<GithubIcon />} />
               <SocialMediaButton
-                name={'Linkedin'}
+                name={"Linkedin"}
                 icon={<LinkedinIcon color="#000" />}
               />
-              <SocialMediaButton name={'Whatsapp'} icon={<WhatsappIcon />} />
-              <SocialMediaButton name={'Email'} icon={<Send color="black" />} />
+              <SocialMediaButton name={"Whatsapp"} icon={<WhatsappIcon />} />
+              <SocialMediaButton name={"Email"} icon={<Send color="black" />} />
             </div>
 
             <ContactMeDraw />
           </div>
         </div>
 
-        <div className="col-span-4  mt-20 relative">
+        <div className="relative col-span-4 mt-20">
           <TechStackBar />
           <TechStackDraw />
         </div>
 
-        <div className="col-span-4 mt-6 relative">
+        <div className="relative col-span-4 mt-6">
           <ToolBar />
           <ToolsDraw />
         </div>
@@ -142,5 +142,5 @@ export const About = () => {
       <AboutLineUp />
       <AboutLineDown />
     </LayoutSection>
-  )
-}
+  );
+};

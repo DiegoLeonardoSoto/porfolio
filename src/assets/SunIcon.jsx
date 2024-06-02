@@ -15,5 +15,5 @@ export const SunIcon = ({ width }) => {
         strokeLinejoin="round"
       />
     </svg>
-  )
-}
+  );
+};

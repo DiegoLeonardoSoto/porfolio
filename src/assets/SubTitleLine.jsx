@@ -1,6 +1,6 @@
 export const SubTitleLine = ({ children }) => {
   return (
-    <div className="flex gap-2 w-[110%] flex-wrap justify-evenly">
+    <div className="flex w-[110%] flex-wrap justify-evenly gap-2">
       <svg
         className="w-5"
         xmlns="http://www.w3.org/2000/svg"
@@ -23,5 +23,5 @@ export const SubTitleLine = ({ children }) => {
         />
       </svg>
     </div>
-  )
-}
+  );
+};
