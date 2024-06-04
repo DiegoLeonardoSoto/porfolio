@@ -29,7 +29,9 @@ export const Projects = () => {
           <p className="min-w-max text-2xl font-bold">PROYECTOS PERSONALES</p>
           <hr className="w-full border-2 border-black" />
         </div>
-        <Carrousel />
+        <div className="my-8 w-full">
+          <Carrousel />
+        </div>
       </div>
     </LayoutSection>
   );

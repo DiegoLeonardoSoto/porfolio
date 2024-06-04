@@ -1,27 +1,30 @@
 import { SocialMediaButton } from "./SocialMediaButton";
 
-export const ProjectCard = () => {
+export const ProjectCard = ({
+  title,
+  description,
+  codeUrl,
+  img,
+  tags,
+  styles,
+}) => {
   return (
-    <div className="flex w-[550px] flex-col gap-4 rounded-2xl border-2 border-black bg-white p-8 shadow-[14px_16px_28px_-3px_rgba(0,0,0,0.75)]">
+    <div
+      className={`flex flex-col gap-4 rounded-2xl border-2 border-black bg-white p-8 ${styles}`}
+    >
       <h4 className="border-b-2 border-black text-2xl font-bold tracking-widest">
-        JOURNAL APP
+        {title.toUpperCase()}
       </h4>
-      <p className="text-sm text-neutral-600">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat.
-      </p>
+      <p className="text-sm text-neutral-600">{description}</p>
 
-      <div className="h-72 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500"></div>
+      <div className="h-72 w-full rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500">
+        {img}
+      </div>
       <div className="flex justify-between">
-        <div className="flex w-3/5 items-center gap-4 overflow-hidden text-sm text-neutral-700">
-          <span className="rounded-full bg-neutral-200 px-4 py-2"> React</span>
-          <span className="rounded-full bg-neutral-200 px-4 py-2">
-            TailwindCSS
-          </span>
-          <span className="rounded-full bg-neutral-200 px-4 py-2">
-            Firebase
-          </span>
+        <div className="flex w-1/3 items-center gap-4 overflow-hidden text-sm text-neutral-700">
+          <span> React</span>
+          <span>TailwindCSS</span>
+          <span>Firebase</span>
         </div>
 
         <div className="flex gap-4">

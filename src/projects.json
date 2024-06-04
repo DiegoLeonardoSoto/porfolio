@@ -9,7 +9,23 @@
       "tags": ["React", "Javascript", "TailwindCSS"]
     },
     {
-      "title": "Journal App",
+      "title": "Journal App 2",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+      "codeUrl": "www.github.com",
+      "liveUrl": "www.netlify.com",
+      "img": "screnshoot.jpg",
+      "tags": ["React", "Javascript", "TailwindCSS"]
+    },
+    {
+      "title": "Journal App 3",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+      "codeUrl": "www.github.com",
+      "liveUrl": "www.netlify.com",
+      "img": "screnshoot.jpg",
+      "tags": ["React", "Javascript", "TailwindCSS"]
+    },
+    {
+      "title": "Journal App 3",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
       "codeUrl": "www.github.com",
       "liveUrl": "www.netlify.com",
