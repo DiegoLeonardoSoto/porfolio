@@ -115,13 +115,26 @@ export const About = () => {
               <SectionHighlight />
             </div>
             <div className="my-4 flex justify-between">
-              <SocialMediaButton name={"Github"} icon={<GithubIcon />} />
+              <SocialMediaButton
+                name={"Github"}
+                icon={<GithubIcon />}
+                hoverStyle="after:bg-blue-600 hover:bg-blue-600"
+              />
               <SocialMediaButton
                 name={"Linkedin"}
-                icon={<LinkedinIcon color="#000" />}
+                icon={<LinkedinIcon />}
+                hoverStyle="after:bg-sky-600 hover:bg-sky-600"
               />
-              <SocialMediaButton name={"Whatsapp"} icon={<WhatsappIcon />} />
-              <SocialMediaButton name={"Email"} icon={<Send color="black" />} />
+              <SocialMediaButton
+                name={"Whatsapp"}
+                icon={<WhatsappIcon />}
+                hoverStyle="after:bg-green-600  hover:bg-green-600"
+              />
+              <SocialMediaButton
+                name={"Email"}
+                icon={<Send color="black" />}
+                hoverStyle="after:bg-red-600 hover:bg-red-600"
+              />
             </div>
 
             <ContactMeDraw />

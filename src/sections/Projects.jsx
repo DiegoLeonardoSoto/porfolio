@@ -5,7 +5,7 @@ import {
   LinesProjectLeftDraw,
   LinesProjectRightDraw,
 } from "../assets";
-import { ProjectCard } from "../components/ProjectCard";
+import { Carrousel } from "../components/Carrousel";
 import { LayoutSection } from "../layout/LayoutSection";
 
 export const Projects = () => {
@@ -29,23 +29,7 @@ export const Projects = () => {
           <p className="min-w-max text-2xl font-bold">PROYECTOS PERSONALES</p>
           <hr className="w-full border-2 border-black" />
         </div>
-        <div className="my-6 flex gap-5 overflow-hidden">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-        </div>
-
-        <div className="flex items-center gap-4">
-          <p className="min-w-max text-2xl font-bold">PROYECTOS PERSONALES</p>
-          <hr className="w-full border-2 border-black" />
-        </div>
-        <div className="my-6 flex gap-5 overflow-hidden">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-        </div>
+        <Carrousel />
       </div>
     </LayoutSection>
   );
