@@ -23,3 +23,6 @@ export * from "./DotsBackground";
 export * from "./ArrowProjectDraw";
 export * from "./LinesProjectLeftDraw";
 export * from "./LinesProjectRightDraw";
+export * from "./LineContactDownDraw";
+export * from "./LineContactUpDraw";
+export * from "./LiveIcon";

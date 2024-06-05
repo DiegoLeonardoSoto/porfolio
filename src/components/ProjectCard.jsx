@@ -1,4 +1,6 @@
-import { SocialMediaButton } from "./SocialMediaButton";
+import { LiveIcon } from "../assets";
+import { CodeIcon } from "../assets/CodeIcon";
+import { Link } from "./Link";
 
 export const ProjectCard = ({ title, description, codeUrl, img, tags }) => {
   return (
@@ -21,13 +23,15 @@ export const ProjectCard = ({ title, description, codeUrl, img, tags }) => {
         </div>
 
         <div className="flex gap-4">
-          <SocialMediaButton
+          <Link
             name="Code"
             hoverStyle="after:bg-blue-600 hover:bg-blue-600"
+            icon={<CodeIcon />}
           />
-          <SocialMediaButton
+          <Link
             name="Live"
             hoverStyle="after:bg-violet-600 hover:bg-violet-600"
+            icon={<LiveIcon />}
           />
         </div>
       </div>

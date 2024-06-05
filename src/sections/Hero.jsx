@@ -3,10 +3,7 @@ import {
   Boat,
   Bulb,
   Click,
-  GithubIcon,
-  LinkedinIcon,
   PaperPlane,
-  Send,
   SubTitleLine,
   HeroNameArrow,
   DownloadCVArrow,
@@ -21,11 +18,11 @@ export const Hero = () => {
     <LayoutSection name="hero" styles="h-screen">
       <DotsBackground />
 
-      <div className="font-PermanentMarker flex flex-col items-center relative">
+      <div className="relative flex flex-col items-center font-PermanentMarker">
         <HeroNameArrow />
-        <h1 className="flex flex-col items-center  relative">
+        <h1 className="relative flex flex-col items-center">
           <span className="font-ShadowsIntoLightTwo text-2xl">HOLA SOY</span>
-          <span className="text-6xl text-white drop-shadow-[7px_5px_0px_rgba(0,0,0,1)] text-stroke-2 my-2">
+          <span className="my-2 text-6xl text-white drop-shadow-[7px_5px_0px_rgba(0,0,0,1)] text-stroke-2">
             Diego Soto
           </span>
           <UnderlineName />

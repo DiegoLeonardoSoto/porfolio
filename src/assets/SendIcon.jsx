@@ -1,10 +1,19 @@
-export const Send = ({ color = "white" }) => {
+export const SendIcon = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.15 29.89">
-      <path
-        className={`fill-${color} group-hover:fill-white`}
-        d="m2.22,13.02s15.99-6.56,21.53-8.87c2.13-.92,9.33-3.88,9.33-3.88,0,0,3.33-1.29,3.05,1.85-.09,1.29-.83,5.82-1.57,10.72-1.11,6.93-2.31,14.51-2.31,14.51,0,0-.18,2.13-1.76,2.5-1.57.37-4.16-1.29-4.62-1.66-.37-.28-6.93-4.44-9.33-6.47-.65-.55-1.39-1.66.09-2.96,3.33-3.05,7.3-6.84,9.7-9.24,1.11-1.11,2.22-3.7-2.4-.55-6.56,4.53-13.03,8.78-13.03,8.78,0,0-1.48.92-4.25.09-2.77-.83-6.01-1.94-6.01-1.94,0,0-2.22-1.39,1.57-2.86h0Z"
-      />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 14l11 -11" />
+      <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" />
     </svg>
   );
 };

@@ -1,7 +1,7 @@
 import {
   GithubIcon,
   LinkedinIcon,
-  Send,
+  SendIcon,
   UnderlineName,
   AboutLineDown,
   AboutLineUp,
@@ -12,10 +12,13 @@ import {
   ToolsDraw,
 } from "../assets";
 
-import { SocialMediaButton, TechStackBar, ToolBar } from "../components";
+import { Link, TechStackBar, ToolBar } from "../components";
 import { LayoutSection } from "../layout/LayoutSection";
 
 export const About = () => {
+  const years =
+    new Date(Date.now()).getFullYear() - new Date(1999, 3, 28).getFullYear();
+
   return (
     <LayoutSection
       name={"about"}
@@ -34,10 +37,10 @@ export const About = () => {
         <div className="col-span-2 pr-24">
           <div className="flex flex-col gap-3">
             <p>
-              Hola, soy Diego Soto, tengo 25 años y soy de Argentina. Aunque
-              siempre me gustaron el dibujo y el diseño, decidí entrar en el
-              mundo de la programación a través de la universidad, donde aprendí
-              los principios básicos.
+              {`Hola, soy Diego Soto, tengo ${years} años y soy de Argentina. Aunque
+                siempre me gustaron el dibujo y el diseño, decidí entrar en el
+                mundo de la programación a través de la universidad, donde aprendí
+                los principios básicos.`}
             </p>
 
             <p>
@@ -115,24 +118,24 @@ export const About = () => {
               <SectionHighlight />
             </div>
             <div className="my-4 flex justify-between">
-              <SocialMediaButton
+              <Link
                 name={"Github"}
                 icon={<GithubIcon />}
                 hoverStyle="after:bg-blue-600 hover:bg-blue-600"
               />
-              <SocialMediaButton
+              <Link
                 name={"Linkedin"}
                 icon={<LinkedinIcon />}
                 hoverStyle="after:bg-sky-600 hover:bg-sky-600"
               />
-              <SocialMediaButton
+              <Link
                 name={"Whatsapp"}
                 icon={<WhatsappIcon />}
                 hoverStyle="after:bg-green-600  hover:bg-green-600"
               />
-              <SocialMediaButton
+              <Link
                 name={"Email"}
-                icon={<Send color="black" />}
+                icon={<SendIcon />}
                 hoverStyle="after:bg-red-600 hover:bg-red-600"
               />
             </div>
