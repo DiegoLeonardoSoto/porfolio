@@ -1,16 +1,9 @@
 import { SocialMediaButton } from "./SocialMediaButton";
 
-export const ProjectCard = ({
-  title,
-  description,
-  codeUrl,
-  img,
-  tags,
-  styles,
-}) => {
+export const ProjectCard = ({ title, description, codeUrl, img, tags }) => {
   return (
     <div
-      className={`flex flex-col gap-4 rounded-2xl border-2 border-black bg-white p-8 ${styles}`}
+      className={`flex flex-col gap-4 rounded-2xl border-2 border-black bg-white p-8 shadow-[6px_6px_25px_-7px_rgba(0,0,0,0.75)]`}
     >
       <h4 className="border-b-2 border-black text-2xl font-bold tracking-widest">
         {title.toUpperCase()}

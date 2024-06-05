@@ -5,7 +5,8 @@ import {
   LinesProjectLeftDraw,
   LinesProjectRightDraw,
 } from "../assets";
-import { Carrousel } from "../components/Carrousel";
+import { projects } from "../projects.json";
+import { ProjectCard } from "../components/ProjectCard";
 import { LayoutSection } from "../layout/LayoutSection";
 
 export const Projects = () => {
@@ -29,8 +30,10 @@ export const Projects = () => {
           <p className="min-w-max text-2xl font-bold">PROYECTOS PERSONALES</p>
           <hr className="w-full border-2 border-black" />
         </div>
-        <div className="my-8 w-full">
-          <Carrousel />
+        <div className="my-8 grid w-full grid-cols-[repeat(auto-fill,_minmax(450px,_1fr))] gap-10">
+          {projects.map((project, i) => {
+            return <ProjectCard {...project} key={crypto.randomUUID()} />;
+          })}
         </div>
       </div>
     </LayoutSection>
