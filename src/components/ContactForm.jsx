@@ -1,8 +1,33 @@
 import { GithubIcon, LinkedinIcon, SendIcon, WhatsappIcon } from "../assets";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export const ContactForm = () => {
+  const formRef = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_d44t5no", "template_0y2nzsm", formRef.current, {
+        publicKey: "clCabzt-0ErERpptp",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        },
+      );
+  };
+
   return (
-    <form className="mt-20 flex w-3/5 flex-col gap-6">
+    <form
+      onSubmit={sendEmail}
+      ref={formRef}
+      className="mt-20 flex w-3/5 flex-col gap-6"
+    >
       <div className="flex gap-8">
         <div className="flex-1">
           <label
@@ -31,7 +56,8 @@ export const ContactForm = () => {
               </svg>
             </div>
             <input
-              type="text"
+              type="email"
+              name="user_email"
               id="email-address-icon"
               className="peer block w-full rounded-lg border-2 border-gray-300 bg-gray-50 p-2.5 ps-10 text-sm text-gray-900 outline-none duration-200 focus:border-black focus:shadow-[7px_7px_0px_0px_rgba(0,0,0,1)] dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
               placeholder="name@flowbite.com"
@@ -66,6 +92,7 @@ export const ContactForm = () => {
             </div>
             <input
               type="text"
+              name="from_name"
               className="block w-full rounded-lg border-2 border-gray-300 bg-gray-50 p-2.5 ps-10 text-sm text-gray-900 outline-none duration-200 focus:border-black focus:shadow-[7px_7px_0px_0px_rgba(0,0,0,1)] dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
               placeholder="asunto"
             />
@@ -100,6 +127,7 @@ export const ContactForm = () => {
             </svg>
           </div>
           <input
+            name="user_name"
             type="text"
             className="block w-full rounded-lg border-2 border-gray-300 bg-gray-50 p-2.5 ps-10 text-sm text-gray-900 outline-none duration-200 focus:border-black focus:shadow-[7px_7px_0px_0px_rgba(0,0,0,1)] dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
             placeholder="nombre"
@@ -115,6 +143,7 @@ export const ContactForm = () => {
         </label>
         <textarea
           id="message"
+          name="message"
           rows="4"
           className="block w-full rounded-lg border-2 border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 outline-none duration-200 focus:border-black focus:shadow-[7px_7px_0px_0px_rgba(0,0,0,1)] focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
           placeholder="Dejame un mensaje..."
@@ -142,15 +171,18 @@ export const ContactForm = () => {
         </div>
 
         <div className="flex gap-8">
-          <a href="#">
+          <a href="https://github.com/DiegoLeonardoSoto" target="_blank">
             <GithubIcon />
           </a>
 
-          <a href="#">
+          <a
+            href="https://www.linkedin.com/in/diego-soto-72a097238/"
+            target="_blank"
+          >
             <LinkedinIcon />
           </a>
 
-          <a href="#">
+          <a href="https://wa.me/542974326618" target="_blank">
             <WhatsappIcon />
           </a>
         </div>
