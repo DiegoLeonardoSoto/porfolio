@@ -2,35 +2,15 @@
   "projects": [
     {
       "title": "Journal App",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-      "codeUrl": "www.github.com",
-      "liveUrl": "www.netlify.com",
-      "img": "screnshoot.jpg",
-      "tags": ["React", "Javascript", "TailwindCSS"]
-    },
-    {
-      "title": "Journal App 2",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-      "codeUrl": "www.github.com",
-      "liveUrl": "www.netlify.com",
-      "img": "screnshoot.jpg",
-      "tags": ["React", "Javascript", "TailwindCSS"]
-    },
-    {
-      "title": "Journal App 3",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-      "codeUrl": "www.github.com",
-      "liveUrl": "www.netlify.com",
-      "img": "screnshoot.jpg",
-      "tags": ["React", "Javascript", "TailwindCSS"]
-    },
-    {
-      "title": "Journal App 3",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-      "codeUrl": "www.github.com",
-      "liveUrl": "www.netlify.com",
-      "img": "screnshoot.jpg",
-      "tags": ["React", "Javascript", "TailwindCSS"]
+      "description": {
+        "spanish": "Una aplicacion de diario con gestion de usuarios para crear, editar y borrar notas, con la capacidad de guardar imagenes.",
+        "english": "A journal app with user management to create, edit, and delete notes, with the ability to save images."
+      },
+      "codeUrl": "https://github.com/DiegoLeonardoSoto/journal-app",
+      "liveUrl": "https://cosmic-sopapillas-3a4cde.netlify.app/",
+      "img": "../public/assets/journal-app.webp",
+      "tags": ["React", "Javascript", "TailwindCSS", "Firebase"],
+      "type": "personal-project"
     }
   ]
 }
