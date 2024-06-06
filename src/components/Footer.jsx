@@ -1,3 +1,5 @@
+import { Link, animateScroll as scroll } from "react-scroll";
+
 export const Footer = () => {
   return (
     <footer className="bg-white dark:bg-gray-900">
@@ -13,24 +15,56 @@ export const Footer = () => {
           </a>
           <ul className="mb-6 flex flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400 sm:mb-0">
             <li>
-              <a href="#" className="me-4 hover:underline md:me-6">
+              <Link
+                activeClass="after:w-[130%]"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="hero"
+                className="me-4 cursor-pointer hover:underline md:me-6"
+              >
                 Inicio
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="me-4 hover:underline md:me-6">
+              <Link
+                activeClass="after:w-[130%]"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="about"
+                className="me-4 cursor-pointer hover:underline md:me-6"
+              >
                 Sobre mi
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="me-4 hover:underline md:me-6">
+              <Link
+                activeClass="after:w-[130%]"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="projects"
+                className="me-4 cursor-pointer hover:underline md:me-6"
+              >
                 Proyectos
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link
+                activeClass="after:w-[130%]"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="contact"
+                className="me-4 cursor-pointer hover:underline md:me-6"
+              >
                 Contacto
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
