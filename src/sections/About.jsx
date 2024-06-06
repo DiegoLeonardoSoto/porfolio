@@ -10,6 +10,7 @@ import {
   ContactMeDraw,
   TechStackDraw,
   ToolsDraw,
+  MailIcon,
 } from "../assets";
 
 import { Link, TechStackBar, ToolBar } from "../components";
@@ -122,21 +123,25 @@ export const About = () => {
                 name={"Github"}
                 icon={<GithubIcon />}
                 hoverStyle="after:bg-blue-600 hover:bg-blue-600"
+                href="https://github.com/DiegoLeonardoSoto"
               />
               <Link
                 name={"Linkedin"}
                 icon={<LinkedinIcon />}
                 hoverStyle="after:bg-sky-600 hover:bg-sky-600"
+                href="https://www.linkedin.com/in/diego-soto-72a097238/"
               />
               <Link
                 name={"Whatsapp"}
                 icon={<WhatsappIcon />}
                 hoverStyle="after:bg-green-600  hover:bg-green-600"
+                href="https://wa.me/542974326618"
               />
               <Link
                 name={"Email"}
-                icon={<SendIcon />}
+                icon={<MailIcon />}
                 hoverStyle="after:bg-red-600 hover:bg-red-600"
+                href="mailto:leonardo.soto123@hotmail.com"
               />
             </div>
 

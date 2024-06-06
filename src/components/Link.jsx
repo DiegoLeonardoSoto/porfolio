@@ -1,8 +1,4 @@
-export const Link = ({ name, icon = null, hoverStyle }) => {
-  const HandleDownloadCv = () => {
-    console.log("hello world");
-  };
-
+export const Link = ({ name, icon = null, hoverStyle, href }) => {
   return (
     <div className="font-Roboto text-black">
       <div
@@ -11,7 +7,8 @@ export const Link = ({ name, icon = null, hoverStyle }) => {
         }}
       >
         <a
-          onClick={HandleDownloadCv}
+          href={href}
+          target="_blank"
           className="block w-full cursor-pointer rounded-full bg-slate-900 duration-200"
         >
           <div
