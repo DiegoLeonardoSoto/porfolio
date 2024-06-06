@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ToggleDarkMode } from "../components/ToggleDarkMode";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { DropdownMenu } from "./DropdownMenu";
 
 export const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -115,6 +116,9 @@ export const Navbar = () => {
               >
                 Contacto
               </Link>
+            </li>
+            <li style={{ marginLeft: "0" }}>
+              <DropdownMenu />
             </li>
           </ul>
         </div>
