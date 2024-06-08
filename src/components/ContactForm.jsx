@@ -19,16 +19,14 @@ export const ContactForm = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = handleSubmit((data) => {
-    console.log(data, formRef.current);
-
-    /*
-        emailjs
+  const onSubmit = handleSubmit(() => {
+    emailjs
       .sendForm("service_d44t5no", "template_0y2nzsm", formRef.current, {
         publicKey: "clCabzt-0ErERpptp",
       })
@@ -40,7 +38,8 @@ export const ContactForm = () => {
           console.log("FAILED...", error.text);
         },
       );
-    */
+
+    reset();
   });
 
   return (
