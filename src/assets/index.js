@@ -27,3 +27,6 @@ export * from "./LineContactDownDraw";
 export * from "./LineContactUpDraw";
 export * from "./LiveIcon";
 export * from "./MailIcon";
+export * from "./ClipContactIcon";
+export * from "./MailContactIcon";
+export * from "./UserContactIcon";

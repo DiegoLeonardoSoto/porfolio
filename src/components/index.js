@@ -6,3 +6,4 @@ export * from "./TechStackBar";
 export * from "./ToggleDarkMode";
 export * from "./ToolBar";
 export * from "./DropdownMenu";
+export * from "./Input";
