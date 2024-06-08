@@ -13,6 +13,7 @@ import { Input } from "./Input";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { schema } from "./schema";
+import { toast } from "sonner";
 
 export const ContactForm = () => {
   const formRef = useRef();
@@ -39,6 +40,9 @@ export const ContactForm = () => {
         },
       );
 
+    toast.success("Mensaje enviado", {
+      description: "Gracias por el mensaje",
+    });
     reset();
   });
 

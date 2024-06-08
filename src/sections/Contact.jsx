@@ -1,3 +1,4 @@
+import { Toaster } from "sonner";
 import { UnderlineName } from "../assets";
 import { LineContactDownDraw } from "../assets/LineContactDownDraw";
 import { LineContactUpDraw } from "../assets/LineContactUpDraw";
@@ -21,6 +22,7 @@ export const Contact = () => {
       </div>
       <LineContactDownDraw />
       <LineContactUpDraw />
+      <Toaster richColors />
     </LayoutSection>
   );
 };
