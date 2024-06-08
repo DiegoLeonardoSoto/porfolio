@@ -38,23 +38,29 @@ export const About = () => {
         <div className="col-span-2 pr-24">
           <div className="flex flex-col gap-3">
             <p>
-              {`Hola, soy Diego Soto, tengo ${years} años y soy de Argentina. Aunque
-                siempre me gustaron el dibujo y el diseño, decidí entrar en el
-                mundo de la programación a través de la universidad, donde aprendí
-                los principios básicos.`}
+              {`Hola 👋, soy Diego Soto, tengo `}
+              <strong>{`${years} años`}</strong>
+              {" y soy de "}
+              <strong>{`Argentina 🇦🇷`}</strong>
+              {`. Aunque siempre me gustaron el dibujo y el diseño 🎨, decidí entrar en el
+  mundo de la programación a través de la universidad, donde aprendí
+  los principios básicos de la programacion.`}
             </p>
 
             <p>
-              Actualmente me encuentro terminando mis estudios de programación
-              en la carrera de Analista Programador Universitario, y además,
-              cursando el tercer año de la carrera de Diseño Gráfico.
+              <strong>Actualmente</strong> me encuentro{" "}
+              <strong>terminando</strong> mis estudios en la carrera de{" "}
+              <strong>Analista Programador Universitario</strong> , y además,
+              cursando el tercer año de la carrera de
+              <strong> Diseño Gráfico</strong>.
             </p>
 
             <p>
-              Me encanta enfocarme en la parte del diseño para poder ofrecer la
-              mejor experiencia al usuario. Mi objetivo es crecer
-              profesionalmente, ofreciendo mi creatividad y mi atención al
-              detalle.
+              Me encanta enfocarme en la parte del <strong>diseño</strong> para
+              poder ofrecer la mejor <strong>experiencia al usuario</strong>. Mi
+              objetivo es crecer profesionalmente, ofreciendo mi{" "}
+              <strong>creatividad</strong> y mi{" "}
+              <strong>atención al detalle</strong> .
             </p>
           </div>
         </div>
