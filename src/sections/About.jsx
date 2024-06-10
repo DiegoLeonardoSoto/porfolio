@@ -38,11 +38,9 @@ export const About = () => {
         <div className="col-span-2 pr-24">
           <div className="flex flex-col gap-3">
             <p>
-              {`Hola 👋, soy Diego Soto, tengo `}
-              <strong>{`${years} años`}</strong>
-              {" y soy de "}
+              {`Hola 👋, soy Diego Soto, tengo ${years} años y soy de `}
               <strong>{`Argentina 🇦🇷`}</strong>
-              {`. Aunque siempre me gustaron el dibujo y el diseño 🎨, decidí entrar en el
+              {`. Aunque siempre me gustaron el dibujo y el diseño, decidí entrar en el
   mundo de la programación a través de la universidad, donde aprendí
   los principios básicos de la programacion.`}
             </p>

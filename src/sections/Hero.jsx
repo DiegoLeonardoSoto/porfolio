@@ -28,7 +28,7 @@ export const Hero = () => {
           <UnderlineName />
         </h1>
         <SubTitleLine>
-          <h2 className="text-xl">FRONTEND DEVELOPER</h2>
+          <h2 className="text-xl">DESARROLLADOR FRONTEND</h2>
         </SubTitleLine>
 
         <DownloadCvButton />
