@@ -8,7 +8,7 @@
       },
       "codeUrl": "https://github.com/DiegoLeonardoSoto/journal-app",
       "liveUrl": "https://cosmic-sopapillas-3a4cde.netlify.app/",
-      "img": "dist/images/journal-app.webp",
+      "img": "../images/journal-app.webp",
       "tags": ["React", "Javascript", "TailwindCSS", "Firebase"],
       "type": "personal-project"
     }
