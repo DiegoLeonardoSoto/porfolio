@@ -23,12 +23,14 @@ export const About = () => {
   return (
     <LayoutSection
       name={"about"}
-      styles={"shadow-[0_0_43px_-10px_rgba(0,0,0,0.75)] text-neutral-600 py-28"}
+      styles={
+        "shadow-[0_0_43px_-10px_rgba(0,0,0,0.75)] text-neutral-600 py-28 dark:bg-neutral-900 dark:text-white dark:shadow-neutral-700"
+      }
     >
       <div className="z-40 mb-32 grid w-3/4 grid-cols-4 gap-4 gap-y-6">
         <div className="col-span-4">
           <div className="relative mb-4 inline-block">
-            <h1 className="my-2 font-PermanentMarker text-5xl text-white drop-shadow-[4px_4px_0px_rgba(0,0,0,1)] text-stroke-1">
+            <h1 className="dark:text-stroke-2-white my-2 font-PermanentMarker text-6xl text-white drop-shadow-[7px_5px_0px_rgba(0,0,0,1)] text-stroke-2 dark:text-black dark:drop-shadow-[4px_4px_0px_rgba(255,255,255,1)]">
               Sobre mi
             </h1>
             <UnderlineName />

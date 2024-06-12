@@ -1,7 +1,7 @@
 export const UnderlineName = () => {
   return (
     <svg
-      className="absolute top-2/3 mix-blend-multiply w-[110%]"
+      className="absolute top-2/3 w-[110%] mix-blend-multiply dark:hidden"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 526.31 39.18"
     >
@@ -14,5 +14,5 @@ export const UnderlineName = () => {
         strokeWidth="26"
       />
     </svg>
-  )
-}
+  );
+};

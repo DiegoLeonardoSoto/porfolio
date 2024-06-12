@@ -11,7 +11,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="fixed start-0 top-0 z-50 w-full bg-white shadow-lg dark:bg-gray-900">
+    <nav className="fixed start-0 top-0 z-50 w-full bg-white shadow-lg dark:bg-neutral-900 dark:shadow-neutral-700">
       <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
         {/* logo */}
         <Link
@@ -62,16 +62,17 @@ export const Navbar = () => {
           } w-full md:order-1 md:flex md:w-auto`}
           id="navbar-sticky"
         >
-          <ul className="mt-4 flex flex-col gap-9 rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse">
+          <ul className="mt-4 flex flex-col gap-9 p-4 font-medium dark:bg-transparent md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse">
             <li>
               <Link
                 activeClass="after:w-[130%]"
+                activeStyle={{ color: "black" }}
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
                 to="hero"
-                className="relative z-10 block cursor-pointer rounded px-3 py-2 text-gray-900 after:absolute after:-left-[15%] after:-top-[15%] after:-z-10 after:h-[130%] after:w-[0%] after:bg-primary-0 after:duration-200 after:content-[''] hover:after:w-[130%] dark:hover:text-black md:bg-transparent md:p-0 md:dark:text-white"
+                className="relative z-10 block cursor-pointer rounded px-3 py-2 text-gray-900 after:absolute after:-left-[15%] after:-top-[15%] after:-z-10 after:h-[130%] after:w-[0%] after:bg-primary-0 after:duration-200 after:content-[''] hover:after:w-[130%] dark:text-white dark:hover:text-black md:bg-transparent md:p-0 md:dark:text-white"
               >
                 Inicio
               </Link>
@@ -79,12 +80,13 @@ export const Navbar = () => {
             <li style={{ marginLeft: "0" }}>
               <Link
                 activeClass="after:w-[130%]"
+                activeStyle={{ color: "black" }}
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
                 to="about"
-                className="relative z-10 block cursor-pointer rounded px-3 py-2 text-gray-900 after:absolute after:-left-[15%] after:-top-[15%] after:-z-10 after:h-[130%] after:w-[0%] after:bg-primary-0 after:duration-200 after:content-[''] hover:after:w-[130%] dark:hover:text-black md:bg-transparent md:p-0 md:dark:text-white"
+                className="relative z-10 block cursor-pointer rounded px-3 py-2 text-gray-900 after:absolute after:-left-[15%] after:-top-[15%] after:-z-10 after:h-[130%] after:w-[0%] after:bg-primary-0 after:duration-200 after:content-[''] hover:after:w-[130%] dark:text-white dark:hover:text-black md:bg-transparent md:p-0 md:dark:text-white"
               >
                 Sobre mi
               </Link>
@@ -93,12 +95,13 @@ export const Navbar = () => {
             <li style={{ marginLeft: "0" }}>
               <Link
                 activeClass="after:w-[130%]"
+                activeStyle={{ color: "black" }}
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
                 to="projects"
-                className="relative z-10 block cursor-pointer rounded px-3 py-2 text-gray-900 after:absolute after:-left-[15%] after:-top-[15%] after:-z-10 after:h-[130%] after:w-[0%] after:bg-primary-0 after:duration-200 after:content-[''] hover:after:w-[130%] dark:hover:text-black md:bg-transparent md:p-0 md:dark:text-white"
+                className="relative z-10 block cursor-pointer rounded px-3 py-2 text-gray-900 after:absolute after:-left-[15%] after:-top-[15%] after:-z-10 after:h-[130%] after:w-[0%] after:bg-primary-0 after:duration-200 after:content-[''] hover:after:w-[130%] dark:text-white dark:hover:text-black md:bg-transparent md:p-0 md:dark:text-white"
               >
                 Proyectos
               </Link>
@@ -107,12 +110,13 @@ export const Navbar = () => {
             <li style={{ marginLeft: "0" }}>
               <Link
                 activeClass="after:w-[130%]"
+                activeStyle={{ color: "black" }}
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
                 to="contact"
-                className="relative z-10 block cursor-pointer rounded px-3 py-2 text-gray-900 after:absolute after:-left-[15%] after:-top-[15%] after:-z-10 after:h-[130%] after:w-[0%] after:bg-primary-0 after:duration-200 after:content-[''] hover:after:w-[130%] dark:hover:text-black md:bg-transparent md:p-0 md:dark:text-white"
+                className="relative z-10 block cursor-pointer rounded px-3 py-2 text-gray-900 after:absolute after:-left-[15%] after:-top-[15%] after:-z-10 after:h-[130%] after:w-[0%] after:bg-primary-0 after:duration-200 after:content-[''] hover:after:w-[130%] dark:text-white dark:hover:text-black md:bg-transparent md:p-0 md:dark:text-white"
               >
                 Contacto
               </Link>
