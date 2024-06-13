@@ -24,21 +24,21 @@ export const About = () => {
     <LayoutSection
       name={"about"}
       styles={
-        "shadow-[0_0_43px_-10px_rgba(0,0,0,0.75)] text-neutral-600 py-28 dark:bg-neutral-900 dark:text-white dark:shadow-neutral-700"
+        "shadow-[0_0_43px_-10px_rgba(0,0,0,0.75)] text-neutral-600 py-20 md:py-28 dark:bg-neutral-900 dark:text-white dark:shadow-neutral-700"
       }
     >
-      <div className="z-40 mb-32 grid w-3/4 grid-cols-4 gap-4 gap-y-6">
-        <div className="col-span-4">
+      <div className="z-40 grid w-4/5 grid-cols-4 gap-4 gap-y-6 md:mb-32 md:w-3/4">
+        <div className="col-span-4 text-center md:text-left">
           <div className="relative mb-4 inline-block">
-            <h1 className="dark:text-stroke-2-white my-2 font-PermanentMarker text-6xl text-white drop-shadow-[7px_5px_0px_rgba(0,0,0,1)] text-stroke-2 dark:text-black dark:drop-shadow-[4px_4px_0px_rgba(255,255,255,1)]">
+            <h1 className="font-PermanentMarker text-6xl text-white drop-shadow-[7px_5px_0px_rgba(0,0,0,1)] text-stroke-2 dark:text-black dark:drop-shadow-[4px_4px_0px_rgba(255,255,255,1)] dark:text-stroke-2-white md:my-2">
               Sobre mi
             </h1>
             <UnderlineName />
           </div>
         </div>
 
-        <div className="col-span-2 pr-24">
-          <div className="flex flex-col gap-3">
+        <div className="col-span-4 md:col-span-2 md:pr-24">
+          <div className="flex flex-col gap-3 text-center md:text-start">
             <p>
               {`Hola 👋, soy Diego Soto, tengo ${years} años y soy de `}
               <strong>{`Argentina 🇦🇷`}</strong>
@@ -65,7 +65,7 @@ export const About = () => {
           </div>
         </div>
 
-        <div className="col-span-2 flex flex-col gap-4">
+        <div className="col-span-4 flex flex-col gap-4 md:col-span-2">
           <div>
             <div className="relative mb-4 inline-block">
               <h3 className="font-PermanentMarker text-lg text-black">
@@ -93,7 +93,7 @@ export const About = () => {
               </div>
             </div>
           </div>
-          <div className="flex">
+          <div className="flex gap-8 md:gap-0">
             <div className="flex-1">
               <div className="relative mb-4 inline-block">
                 <h3 className="font-PermanentMarker text-lg text-black">
@@ -106,7 +106,7 @@ export const About = () => {
               <p>Inglés - Intermedio</p>
             </div>
 
-            <div className="flex-[2]">
+            <div className="flex-1 md:flex-[2]">
               <div className="relative mb-4 inline-block">
                 <h3 className="font-PermanentMarker text-lg text-black">
                   Hobbys
@@ -124,7 +124,7 @@ export const About = () => {
               </h3>
               <SectionHighlight />
             </div>
-            <div className="my-4 flex justify-between">
+            <div className="my-4 flex flex-wrap justify-between gap-1 md:gap-0">
               <Link
                 name={"Github"}
                 icon={<GithubIcon />}
@@ -160,7 +160,7 @@ export const About = () => {
           <TechStackDraw />
         </div>
 
-        <div className="relative col-span-4 mt-6">
+        <div className="relative col-span-4 mt-20 md:mt-6">
           <ToolBar />
           <ToolsDraw />
         </div>

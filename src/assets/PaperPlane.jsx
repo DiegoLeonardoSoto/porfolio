@@ -1,7 +1,7 @@
 export const PaperPlane = () => {
   return (
     <svg
-      className="absolute bottom-20 right-11 w-[33rem]"
+      className="absolute -right-28 bottom-8 w-80 md:bottom-20 md:right-11 md:w-[33rem]"
       data-name="Capa 1"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 595.04 413.22"
@@ -413,5 +413,5 @@ export const PaperPlane = () => {
         />
       </g>
     </svg>
-  )
-}
+  );
+};

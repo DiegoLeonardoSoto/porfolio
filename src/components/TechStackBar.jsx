@@ -47,7 +47,7 @@ export const TechStackBar = () => {
             <img
               src={imgSrc}
               alt={alt}
-              className="w-28 grayscale  duration-500 hover:grayscale-0 "
+              className="w-14 grayscale duration-500 hover:grayscale-0 md:w-28"
             />
           </li>
         );

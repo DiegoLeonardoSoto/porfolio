@@ -18,7 +18,7 @@ export const ProjectCard = ({
         {title.toUpperCase()}
       </h4>
       <p className="text-sm text-neutral-600">{description["spanish"]}</p>
-      <div className="flex items-center gap-4 overflow-hidden text-sm text-neutral-700">
+      <div className="flex flex-wrap items-center gap-4 overflow-hidden text-sm text-neutral-700">
         {tags.map((tag) => {
           return (
             <span key={tag} className="rounded-full bg-gray-200 px-3 py-2">
@@ -27,10 +27,6 @@ export const ProjectCard = ({
           );
         })}
       </div>
-
-      {/* 
-      <img src={img} alt={title + "Image"} className="h-72 rounded-2xl" />
-      */}
 
       <div
         style={{

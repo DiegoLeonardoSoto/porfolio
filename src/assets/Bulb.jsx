@@ -1,7 +1,7 @@
 export const Bulb = () => {
   return (
     <svg
-      className="absolute z-10 w-96 top-32 left-32"
+      className="absolute -left-28 top-28 z-10 w-80 md:left-32 md:top-32 md:w-96"
       data-name="Capa 1"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 412.5 316.3"
@@ -133,5 +133,5 @@ export const Bulb = () => {
         strokeWidth="8"
       />
     </svg>
-  )
-}
+  );
+};

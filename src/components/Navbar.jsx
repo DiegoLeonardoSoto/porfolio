@@ -33,7 +33,7 @@ export const Navbar = () => {
             onClick={() => setShowLinks((prev) => !prev)}
             data-collapse-toggle="navbar-sticky"
             type="button"
-            className="items-cente inline-flex h-10 w-10 justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+            className="items-cente inline-flex h-10 w-10 justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-neutral-700 dark:focus:ring-gray-600 md:hidden"
             aria-controls="navbar-sticky"
             aria-expanded="false"
           >
@@ -72,6 +72,7 @@ export const Navbar = () => {
                 offset={-70}
                 duration={500}
                 to="hero"
+                onClick={() => setShowLinks((prev) => !prev)}
                 className="relative z-10 block cursor-pointer rounded px-3 py-2 text-gray-900 after:absolute after:-left-[15%] after:-top-[15%] after:-z-10 after:h-[130%] after:w-[0%] after:bg-primary-0 after:duration-200 after:content-[''] hover:after:w-[130%] dark:text-white dark:hover:text-black md:bg-transparent md:p-0 md:dark:text-white"
               >
                 Inicio
@@ -86,6 +87,7 @@ export const Navbar = () => {
                 offset={-70}
                 duration={500}
                 to="about"
+                onClick={() => setShowLinks((prev) => !prev)}
                 className="relative z-10 block cursor-pointer rounded px-3 py-2 text-gray-900 after:absolute after:-left-[15%] after:-top-[15%] after:-z-10 after:h-[130%] after:w-[0%] after:bg-primary-0 after:duration-200 after:content-[''] hover:after:w-[130%] dark:text-white dark:hover:text-black md:bg-transparent md:p-0 md:dark:text-white"
               >
                 Sobre mi
@@ -101,6 +103,7 @@ export const Navbar = () => {
                 offset={-70}
                 duration={500}
                 to="projects"
+                onClick={() => setShowLinks((prev) => !prev)}
                 className="relative z-10 block cursor-pointer rounded px-3 py-2 text-gray-900 after:absolute after:-left-[15%] after:-top-[15%] after:-z-10 after:h-[130%] after:w-[0%] after:bg-primary-0 after:duration-200 after:content-[''] hover:after:w-[130%] dark:text-white dark:hover:text-black md:bg-transparent md:p-0 md:dark:text-white"
               >
                 Proyectos
@@ -116,6 +119,7 @@ export const Navbar = () => {
                 offset={-70}
                 duration={500}
                 to="contact"
+                onClick={() => setShowLinks((prev) => !prev)}
                 className="relative z-10 block cursor-pointer rounded px-3 py-2 text-gray-900 after:absolute after:-left-[15%] after:-top-[15%] after:-z-10 after:h-[130%] after:w-[0%] after:bg-primary-0 after:duration-200 after:content-[''] hover:after:w-[130%] dark:text-white dark:hover:text-black md:bg-transparent md:p-0 md:dark:text-white"
               >
                 Contacto

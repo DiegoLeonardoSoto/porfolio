@@ -1,7 +1,7 @@
 export const Click = () => {
   return (
     <svg
-      className="absolute w-80 bottom-36 left-16"
+      className="absolute -left-8 bottom-24 w-64 md:bottom-36 md:left-16 md:w-80"
       data-name="Capa 1"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 318.12 253.43"
@@ -91,5 +91,5 @@ export const Click = () => {
         d="m232.87,113.81c-.12-.09-.16-.13-.23-.36-.57-1.53-.79-4.52,3.43-4.7.08,0,.41.03.54.09l8.24,6.2,15.33,11.55,4.59,3.46s7.18,6.2,11.92,10.94c8.2,7.82,3.78,6.22-2.24,2.62.5.55-14.05-9.09-14.05-9.09l-3.95-2.97-15.34-11.53-8.25-6.2Z"
       />
     </svg>
-  )
-}
+  );
+};
