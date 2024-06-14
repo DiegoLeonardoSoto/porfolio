@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   UnderlineName,
   Boat,
@@ -14,6 +15,8 @@ import { DownloadCvButton } from "../components/DownloadCvButton";
 import { LayoutSection } from "../layout/LayoutSection";
 
 export const Hero = () => {
+  const { t } = useTranslation("global");
+
   return (
     <LayoutSection name="hero" styles="h-screen">
       <DotsBackground />
@@ -22,7 +25,7 @@ export const Hero = () => {
         <HeroNameArrow />
         <h1 className="relative flex flex-col items-center">
           <span className="font-ShadowsIntoLightTwo text-2xl dark:text-white">
-            HOLA SOY
+            {t("hero.greeting")}
           </span>
           <span className="my-2 text-6xl text-white drop-shadow-[7px_5px_0px_rgba(0,0,0,1)] text-stroke-2 dark:text-black dark:drop-shadow-[7px_5px_0px_rgba(255,255,255,1)] dark:text-stroke-2-white">
             Diego Soto
@@ -30,7 +33,7 @@ export const Hero = () => {
           <UnderlineName />
         </h1>
         <SubTitleLine>
-          <h2 className="text-xl dark:text-white">DESARROLLADOR FRONTEND</h2>
+          <h2 className="text-xl dark:text-white">{t("hero.subtitle")}</h2>
         </SubTitleLine>
 
         <DownloadCvButton />

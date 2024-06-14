@@ -1,0 +1,73 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about_me": "About me",
+    "projects": "Projects",
+    "contact": "Contact",
+    "language": { "es": "Spanish 🇪🇸", "en": "English 🇺🇸" }
+  },
+  "hero": {
+    "greeting": "HI 👋, I AM",
+    "subtitle": "FRONTEND DEVELOPER",
+    "cv_button": "Download CV"
+  },
+  "about_me": {
+    "title": "About me",
+    "paragraph1": "Hello 👋, I'm Diego Soto, I'm 25 years old and I'm from Argentina 🇦🇷. Although I always liked drawing and design, I decided to enter the world of programming through university, where I learned the principles basics of programming.",
+    "paragraph2": "I am currently finishing my studies in the University Programming Analyst degree, and also in the third year of the Graphic Design degree.",
+    "paragraph3": "I love focusing on the design part to be able to offer the best user experience. My goal is to grow professionally, offering my creativity and my attention to detail.",
+    "section": {
+      "education": {
+        "titleSection": "Education",
+        "content": [
+          {
+            "career_name": "Graphic Design",
+            "duration": "2020 - In progress",
+            "institute": "Instituto Superior San Martín"
+          },
+          {
+            "career_name": "University Programmer Analyst",
+            "duration": "2018 - In progress",
+            "institute": "Universidad Nacional San Juan Bosco"
+          }
+        ]
+      },
+      "languages": {
+        "titleSection": "Languages",
+        "content": {
+          "spanish": "Spanish - Native",
+          "english": "English - Middle"
+        }
+      },
+      "hobbies": {
+        "titleSection": "Hobbies",
+        "content": "Video-games - Music - Guitar - Drawing - Karate"
+      },
+      "contact": {
+        "titleSection": "Contact"
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "types_project": {
+      "personal_projects": "PERSONAL PROJECTS"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "inputSubject": {
+      "label": "Subject",
+      "placeholder": "subject"
+    },
+    "inputName": {
+      "label": "Name",
+      "placeholder": "name"
+    },
+    "inputMessage": {
+      "label": "Message",
+      "placeholder": "Send me a message"
+    },
+    "submitButton": "Send"
+  }
+}

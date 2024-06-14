@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   GithubIcon,
   LinkedinIcon,
@@ -17,6 +18,7 @@ import { Link, TechStackBar, ToolBar } from "../components";
 import { LayoutSection } from "../layout/LayoutSection";
 
 export const About = () => {
+  const { t } = useTranslation("global");
   const years =
     new Date(Date.now()).getFullYear() - new Date(1999, 3, 28).getFullYear();
 
@@ -31,7 +33,7 @@ export const About = () => {
         <div className="col-span-4 text-center md:text-left">
           <div className="relative mb-4 inline-block">
             <h1 className="font-PermanentMarker text-6xl text-white drop-shadow-[7px_5px_0px_rgba(0,0,0,1)] text-stroke-2 dark:text-black dark:drop-shadow-[4px_4px_0px_rgba(255,255,255,1)] dark:text-stroke-2-white md:my-2">
-              Sobre mi
+              {t("about_me.title")}
             </h1>
             <UnderlineName />
           </div>
@@ -39,29 +41,11 @@ export const About = () => {
 
         <div className="col-span-4 md:col-span-2 md:pr-24">
           <div className="flex flex-col gap-3 text-center md:text-start">
-            <p>
-              {`Hola 👋, soy Diego Soto, tengo ${years} años y soy de `}
-              <strong>{`Argentina 🇦🇷`}</strong>
-              {`. Aunque siempre me gustaron el dibujo y el diseño, decidí entrar en el
-  mundo de la programación a través de la universidad, donde aprendí
-  los principios básicos de la programacion.`}
-            </p>
+            <p>{t("about_me.paragraph1")}</p>
 
-            <p>
-              <strong>Actualmente</strong> me encuentro{" "}
-              <strong>terminando</strong> mis estudios en la carrera de{" "}
-              <strong>Analista Programador Universitario</strong> , y además,
-              cursando el tercer año de la carrera de
-              <strong> Diseño Gráfico</strong>.
-            </p>
+            <p>{t("about_me.paragraph2")}</p>
 
-            <p>
-              Me encanta enfocarme en la parte del <strong>diseño</strong> para
-              poder ofrecer la mejor <strong>experiencia al usuario</strong>. Mi
-              objetivo es crecer profesionalmente, ofreciendo mi{" "}
-              <strong>creatividad</strong> y mi{" "}
-              <strong>atención al detalle</strong> .
-            </p>
+            <p>{t("about_me.paragraph3")}</p>
           </div>
         </div>
 
@@ -69,7 +53,7 @@ export const About = () => {
           <div>
             <div className="relative mb-4 inline-block">
               <h3 className="font-PermanentMarker text-lg text-black">
-                Eduacion
+                {t("about_me.section.education.titleSection")}
               </h3>
               <SectionHighlight />
             </div>
@@ -77,19 +61,22 @@ export const About = () => {
             <div className="flex gap-4">
               <div className="flex flex-col">
                 <p>
-                  <span className="font-bold">Diseño Gráfico</span> - 2020 - En
-                  curso
+                  <span className="font-bold">
+                    {t("about_me.section.education.content.0.career_name")}
+                  </span>{" "}
+                  - {t("about_me.section.education.content.0.duration")}
                 </p>
-                <p>Instituto Superior San Martín</p>
+                <p>{t("about_me.section.education.content.0.institute")}</p>
               </div>
 
               <div className="flex flex-col">
                 <p>
                   <span className="font-bold">
-                    Analista Programador Universitario
-                  </span>
+                    {t("about_me.section.education.content.1.career_name")}
+                  </span>{" "}
+                  - {t("about_me.section.education.content.1.duration")}
                 </p>
-                <p>Universidad Nacional San Juan Bosco</p>
+                <p>{t("about_me.section.education.content.1.institute")}</p>
               </div>
             </div>
           </div>
@@ -97,30 +84,30 @@ export const About = () => {
             <div className="flex-1">
               <div className="relative mb-4 inline-block">
                 <h3 className="font-PermanentMarker text-lg text-black">
-                  Idioma
+                  {t("about_me.section.languages.titleSection")}
                 </h3>
                 <SectionHighlight />
               </div>
 
-              <p>Español - Nativo</p>
-              <p>Inglés - Intermedio</p>
+              <p>{t("about_me.section.languages.content.spanish")}</p>
+              <p>{t("about_me.section.languages.content.english")}</p>
             </div>
 
             <div className="flex-1 md:flex-[2]">
               <div className="relative mb-4 inline-block">
                 <h3 className="font-PermanentMarker text-lg text-black">
-                  Hobbys
+                  {t("about_me.section.hobbies.titleSection")}
                 </h3>
                 <SectionHighlight />
               </div>
-              <p>Videojuegos - Música - Guitarra - Dibujo - Karate</p>
+              <p>{t("about_me.section.hobbies.content")}</p>
             </div>
           </div>
 
           <div>
             <div className="relative mb-4 inline-block">
               <h3 className="font-PermanentMarker text-lg text-black">
-                Contacto
+                {t("about_me.section.contact.titleSection")}
               </h3>
               <SectionHighlight />
             </div>
@@ -132,13 +119,13 @@ export const About = () => {
                 href="https://github.com/DiegoLeonardoSoto"
               />
               <Link
-                name={"Linkedin"}
+                name={"LinkedIn"}
                 icon={<LinkedinIcon />}
                 hoverStyle="after:bg-sky-600 hover:bg-sky-600"
                 href="https://www.linkedin.com/in/diego-soto-72a097238/"
               />
               <Link
-                name={"Whatsapp"}
+                name={"WhatsApp"}
                 icon={<WhatsappIcon />}
                 hoverStyle="after:bg-green-600  hover:bg-green-600"
                 href="https://wa.me/542974326618"

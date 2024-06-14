@@ -3,8 +3,8 @@
     {
       "title": "Journal App",
       "description": {
-        "spanish": "Una aplicacion de diario con gestion de usuarios para crear, editar y borrar notas, con la capacidad de guardar imagenes.",
-        "english": "A journal app with user management to create, edit, and delete notes, with the ability to save images."
+        "es": "Una aplicación de diario con gestión de usuarios para crear, editar y borrar notas, con la capacidad de guardar imágenes.",
+        "en": "A journal app with user management to create, edit, and delete notes, with the ability to save images."
       },
       "codeUrl": "https://github.com/DiegoLeonardoSoto/journal-app",
       "liveUrl": "https://cosmic-sopapillas-3a4cde.netlify.app/",

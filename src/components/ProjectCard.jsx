@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { LiveIcon } from "../assets";
 import { CodeIcon } from "../assets/CodeIcon";
 import { Link } from "./Link";
@@ -10,6 +11,8 @@ export const ProjectCard = ({
   img,
   tags,
 }) => {
+  const [t, i18next] = useTranslation("global");
+
   return (
     <div
       className={`flex flex-col gap-4 rounded-2xl border-2 border-black bg-white p-8 shadow-[6px_6px_25px_-7px_rgba(0,0,0,0.75)]`}
@@ -17,7 +20,9 @@ export const ProjectCard = ({
       <h4 className="border-b-2 border-black text-2xl font-bold tracking-widest">
         {title.toUpperCase()}
       </h4>
-      <p className="text-sm text-neutral-600">{description["spanish"]}</p>
+      <p className="text-sm text-neutral-600">
+        {description[i18next.language]}
+      </p>
       <div className="flex flex-wrap items-center gap-4 overflow-hidden text-sm text-neutral-700">
         {tags.map((tag) => {
           return (

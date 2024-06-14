@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 export const Footer = () => {
+  const { t } = useTranslation("global");
+
   return (
     <footer className="bg-white dark:bg-neutral-900 dark:shadow-neutral-700">
       <div className="mx-auto w-full max-w-screen-xl p-4 md:py-8">
@@ -24,7 +27,7 @@ export const Footer = () => {
                 to="hero"
                 className="me-4 cursor-pointer hover:underline md:me-6"
               >
-                Inicio
+                {t("navbar.home")}
               </Link>
             </li>
             <li>
@@ -37,7 +40,7 @@ export const Footer = () => {
                 to="about"
                 className="me-4 cursor-pointer hover:underline md:me-6"
               >
-                Sobre mi
+                {t("navbar.about_me")}
               </Link>
             </li>
             <li>
@@ -50,7 +53,7 @@ export const Footer = () => {
                 to="projects"
                 className="me-4 cursor-pointer hover:underline md:me-6"
               >
-                Proyectos
+                {t("navbar.projects")}
               </Link>
             </li>
             <li>
@@ -63,7 +66,7 @@ export const Footer = () => {
                 to="contact"
                 className="me-4 cursor-pointer hover:underline md:me-6"
               >
-                Contacto
+                {t("navbar.contact")}
               </Link>
             </li>
           </ul>

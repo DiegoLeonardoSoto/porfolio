@@ -1,0 +1,73 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about_me": "Sobre mi",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "language": { "es": "Español 🇪🇸", "en": "Inglés 🇺🇸" }
+  },
+  "hero": {
+    "greeting": "HOLA 👋, SOY",
+    "subtitle": "DESARROLLADOR FRONTEND",
+    "cv_button": "Descargar CV"
+  },
+  "about_me": {
+    "title": "Sobre mi",
+    "paragraph1": "Hola 👋, soy Diego Soto, tengo 25 años y soy de Argentina 🇦🇷. Aunque siempre me gustaron el dibujo y el diseño, decidí entrar en el mundo de la programación a través de la universidad, donde aprendí los principios básicos de la programación.",
+    "paragraph2": "Actualmente me encuentro terminando mis estudios en la carrera de Analista Programador Universitario , y además, cursando el tercer año de la carrera de Diseño Gráfico.",
+    "paragraph3": "Me encanta enfocarme en la parte del diseño para poder ofrecer la mejor experiencia al usuario. Mi objetivo es crecer profesionalmente, ofreciendo mi creatividad y mi atención al detalle.",
+    "section": {
+      "education": {
+        "titleSection": "Educación",
+        "content": [
+          {
+            "career_name": "Diseño Gráfico",
+            "duration": "2020 - En curso",
+            "institute": "Instituto Superior San Martín"
+          },
+          {
+            "career_name": "Analista Programador Universitario",
+            "duration": "2018 - En curso",
+            "institute": "Universidad Nacional San Juan Bosco"
+          }
+        ]
+      },
+      "languages": {
+        "titleSection": "Idiomas",
+        "content": {
+          "spanish": "Español - Nativo",
+          "english": "Inglés - Intermedio"
+        }
+      },
+      "hobbies": {
+        "titleSection": "Hobbies",
+        "content": "Videojuegos - Música - Guitarra - Dibujo - Karate"
+      },
+      "contact": {
+        "titleSection": "Contacto"
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "types_project": {
+      "personal_projects": "PROYECTOS PERSONALES"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "inputSubject": {
+      "label": "Asunto",
+      "placeholder": "asunto"
+    },
+    "inputName": {
+      "label": "Nombre",
+      "placeholder": "nombre"
+    },
+    "inputMessage": {
+      "label": "Mensaje",
+      "placeholder": "Déjame un mensaje"
+    },
+    "submitButton": "Enviar"
+  }
+}

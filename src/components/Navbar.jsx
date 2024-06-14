@@ -2,8 +2,11 @@ import { useState } from "react";
 import { ToggleDarkMode } from "../components/ToggleDarkMode";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { DropdownMenu } from "./DropdownMenu";
+import { useTranslation } from "react-i18next";
 
 export const Navbar = () => {
+  const { t } = useTranslation("global");
+
   const [showLinks, setShowLinks] = useState(false);
 
   const handleScrollToTop = () => {
@@ -75,7 +78,7 @@ export const Navbar = () => {
                 onClick={() => setShowLinks((prev) => !prev)}
                 className="relative z-10 block cursor-pointer rounded px-3 py-2 text-gray-900 after:absolute after:-left-[15%] after:-top-[15%] after:-z-10 after:h-[130%] after:w-[0%] after:bg-primary-0 after:duration-200 after:content-[''] hover:after:w-[130%] dark:text-white dark:hover:text-black md:bg-transparent md:p-0 md:dark:text-white"
               >
-                Inicio
+                {t("navbar.home")}
               </Link>
             </li>
             <li style={{ marginLeft: "0" }}>
@@ -90,7 +93,7 @@ export const Navbar = () => {
                 onClick={() => setShowLinks((prev) => !prev)}
                 className="relative z-10 block cursor-pointer rounded px-3 py-2 text-gray-900 after:absolute after:-left-[15%] after:-top-[15%] after:-z-10 after:h-[130%] after:w-[0%] after:bg-primary-0 after:duration-200 after:content-[''] hover:after:w-[130%] dark:text-white dark:hover:text-black md:bg-transparent md:p-0 md:dark:text-white"
               >
-                Sobre mi
+                {t("navbar.about_me")}
               </Link>
             </li>
 
@@ -106,7 +109,7 @@ export const Navbar = () => {
                 onClick={() => setShowLinks((prev) => !prev)}
                 className="relative z-10 block cursor-pointer rounded px-3 py-2 text-gray-900 after:absolute after:-left-[15%] after:-top-[15%] after:-z-10 after:h-[130%] after:w-[0%] after:bg-primary-0 after:duration-200 after:content-[''] hover:after:w-[130%] dark:text-white dark:hover:text-black md:bg-transparent md:p-0 md:dark:text-white"
               >
-                Proyectos
+                {t("navbar.projects")}
               </Link>
             </li>
 
@@ -122,7 +125,7 @@ export const Navbar = () => {
                 onClick={() => setShowLinks((prev) => !prev)}
                 className="relative z-10 block cursor-pointer rounded px-3 py-2 text-gray-900 after:absolute after:-left-[15%] after:-top-[15%] after:-z-10 after:h-[130%] after:w-[0%] after:bg-primary-0 after:duration-200 after:content-[''] hover:after:w-[130%] dark:text-white dark:hover:text-black md:bg-transparent md:p-0 md:dark:text-white"
               >
-                Contacto
+                {t("navbar.contact")}
               </Link>
             </li>
             <li style={{ marginLeft: "0" }}>

@@ -1,11 +1,19 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export const DropdownMenu = () => {
   const [showDropDownMenu, setShowDropDownMenu] = useState(false);
-  const [languages, setLanguages] = useState("Español");
+  const [t, i18n] = useTranslation("global");
 
-  const handleSetLannguages = (languages) => {
-    setLanguages(languages);
+  const [languages, setLanguages] = useState(
+    i18n.getDataByLanguage(i18n.language).global.navbar.language[i18n.language],
+  );
+
+  console.log(i18n.getDataByLanguage(i18n.language).global);
+
+  const handleSetLanguages = (lang) => {
+    i18n.changeLanguage(lang);
+    setLanguages(i18n.getDataByLanguage(lang).global.navbar.language[lang]);
     setShowDropDownMenu(false);
   };
 
@@ -48,18 +56,18 @@ export const DropdownMenu = () => {
         >
           <li>
             <button
-              onClick={() => handleSetLannguages("Español")}
+              onClick={() => handleSetLanguages("es")}
               className="block w-full px-4 py-4 hover:bg-gray-100 dark:hover:bg-neutral-600 dark:hover:text-white"
             >
-              Español
+              {t("navbar.language.es")}
             </button>
           </li>
           <li>
             <button
-              onClick={() => handleSetLannguages("Ingles")}
+              onClick={() => handleSetLanguages("en")}
               className="block w-full px-4 py-4 hover:bg-gray-100 dark:hover:bg-neutral-600 dark:hover:text-white"
             >
-              Ingles
+              {t("navbar.language.en")}
             </button>
           </li>
         </ul>

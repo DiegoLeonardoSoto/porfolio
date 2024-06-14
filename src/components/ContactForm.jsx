@@ -14,8 +14,10 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { schema } from "./schema";
 import { toast } from "sonner";
+import { useTranslation } from "react-i18next";
 
 export const ContactForm = () => {
+  const { t } = useTranslation("global");
   const formRef = useRef();
   const {
     register,
@@ -67,10 +69,10 @@ export const ContactForm = () => {
 
         <div className="flex-1">
           <Input
-            label="Asunto"
+            label={t("contact.inputSubject.label")}
             name="from_name"
             type="text"
-            placeholder="asunto"
+            placeholder={t("contact.inputSubject.placeholder")}
             register={{ ...register("from_name") }}
             errorMessage={errors.from_name?.message}
             icon={<ClipContactIcon />}
@@ -80,10 +82,10 @@ export const ContactForm = () => {
 
       <div>
         <Input
-          label="Nombre"
+          label={t("contact.inputName.label")}
           name="user_name"
           type="text"
-          placeholder="nombre"
+          placeholder={t("contact.inputName.placeholder")}
           register={{ ...register("user_name") }}
           errorMessage={errors.user_name?.message}
           icon={<UserContactIcon />}
@@ -91,10 +93,10 @@ export const ContactForm = () => {
       </div>
       <div>
         <Input
-          label="Mensaje"
+          label={t("contact.inputMessage.label")}
           name="message"
           type="textarea"
-          placeholder="Dejame un mensaje..."
+          placeholder={t("contact.inputMessage.placeholder")}
           register={{ ...register("message") }}
           errorMessage={errors.message?.message}
         />
@@ -127,7 +129,7 @@ export const ContactForm = () => {
           >
             <div className="clip relative flex w-full -translate-x-1 -translate-y-1 items-center justify-center overflow-hidden rounded-full border-2 border-slate-900 bg-white px-4 py-2 duration-200 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:rounded-md after:bg-[#fddf28] after:content-[''] hover:-translate-x-1.5 hover:-translate-y-1.5 hover:bg-[#fddf28] active:translate-x-0 active:translate-y-0">
               <h4 className="z-10 flex w-full items-center justify-center gap-3 duration-200">
-                Enviar
+                {t("contact.submitButton")}
                 <SendIcon />
               </h4>
             </div>

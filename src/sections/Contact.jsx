@@ -4,8 +4,10 @@ import { LineContactDownDraw } from "../assets/LineContactDownDraw";
 import { LineContactUpDraw } from "../assets/LineContactUpDraw";
 import { ContactForm } from "../components/ContactForm";
 import { LayoutSection } from "../layout/LayoutSection";
+import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
+  const { t } = useTranslation("global");
   return (
     <LayoutSection
       name={"contact"}
@@ -16,7 +18,7 @@ export const Contact = () => {
       <div className="z-40 flex w-4/5 flex-col items-center justify-center md:w-3/5">
         <h2 className="relative inline-block font-PermanentMarker">
           <span className="my-2 text-6xl text-white drop-shadow-[7px_5px_0px_rgba(0,0,0,1)] text-stroke-2 dark:text-black dark:drop-shadow-[7px_5px_0px_rgba(255,255,255,1)] dark:text-stroke-2-white">
-            Contacto
+            {t("contact.title")}
           </span>
           <UnderlineName />
         </h2>
