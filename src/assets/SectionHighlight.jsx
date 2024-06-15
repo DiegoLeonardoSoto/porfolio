@@ -1,7 +1,7 @@
 export const SectionHighlight = () => {
   return (
     <svg
-      className="absolute -left-[40%] -top-[40%] -z-10 h-14 w-40"
+      className="absolute -left-[20%] -top-[50%] -z-10 h-14 w-36 md:-left-[40%] md:-top-[40%] md:w-40"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 194.09 46.01"
     >

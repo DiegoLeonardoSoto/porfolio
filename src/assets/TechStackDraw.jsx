@@ -1,7 +1,7 @@
 export const TechStackDraw = () => {
   return (
     <svg
-      className="absolute -left-16 -top-20 z-40 w-52 md:-left-28 md:-top-14 md:w-72"
+      className="absolute -left-4 -top-16 z-40 w-32 md:-left-28 md:-top-14 md:w-72"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 334.88 213.39"
     >

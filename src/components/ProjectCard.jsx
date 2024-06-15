@@ -15,7 +15,7 @@ export const ProjectCard = ({
 
   return (
     <div
-      className={`flex flex-col gap-4 rounded-2xl border-2 border-black bg-white p-8 shadow-[6px_6px_25px_-7px_rgba(0,0,0,0.75)]`}
+      className={`flex flex-col gap-4 rounded-2xl border-2 border-black bg-white p-8 shadow-[8px_8px_15px_-3px_rgba(0,0,0,0.75)] dark:shadow-black`}
     >
       <h4 className="border-b-2 border-black text-2xl font-bold tracking-widest">
         {title.toUpperCase()}
@@ -32,16 +32,11 @@ export const ProjectCard = ({
           );
         })}
       </div>
-
-      <div
-        style={{
-          backgroundImage: `url('${img}')`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        className={`h-72 w-full rounded-2xl bg-[url()]`}
-      ></div>
+      <img
+        className="rounded-xl"
+        src={img}
+        alt={title.toLowerCase() + "Image"}
+      />
       <div className="flex justify-end">
         <div className="flex gap-4">
           <Link

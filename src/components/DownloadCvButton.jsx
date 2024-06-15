@@ -2,7 +2,12 @@ import { useTranslation } from "react-i18next";
 import { DownloadIcon } from "../assets";
 
 export const DownloadCvButton = () => {
-  const { t } = useTranslation("global");
+  const { t, i18n } = useTranslation("global");
+
+  const cvLink = {
+    es: "../files/DiegoSoto-CV-es.pdf",
+    en: "../files/DiegoSoto-CV-en.pdf",
+  };
 
   return (
     <div className="mt-10 w-3/4 font-Roboto">
@@ -13,7 +18,7 @@ export const DownloadCvButton = () => {
       >
         <a
           target="_blank"
-          href="../files/CV-Provisorio.pdf"
+          href={cvLink[i18n.language]}
           className="block w-full rounded-full bg-black duration-200 dark:border-2 dark:border-black dark:bg-neutral-500"
           download
         >

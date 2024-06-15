@@ -29,7 +29,7 @@ export const About = () => {
         "shadow-[0_0_43px_-10px_rgba(0,0,0,0.75)] text-neutral-600 py-20 md:py-28 dark:bg-neutral-900 dark:text-white dark:shadow-neutral-700"
       }
     >
-      <div className="z-40 grid w-4/5 grid-cols-4 gap-4 gap-y-6 md:mb-32 md:w-3/4">
+      <div className="z-40 grid grid-cols-4 gap-4 gap-y-6 md:mb-32">
         <div className="col-span-4 text-center md:text-left">
           <div className="relative mb-4 inline-block">
             <h1 className="font-PermanentMarker text-6xl text-white drop-shadow-[7px_5px_0px_rgba(0,0,0,1)] text-stroke-2 dark:text-black dark:drop-shadow-[4px_4px_0px_rgba(255,255,255,1)] dark:text-stroke-2-white md:my-2">

@@ -1,7 +1,7 @@
 export const ToolsDraw = () => {
   return (
     <svg
-      className="absolute -right-11 -top-20 z-50 w-52 md:-right-20 md:-top-48 md:w-64"
+      className="absolute -right-3 -top-12 z-50 w-32 md:-right-20 md:-top-48 md:w-64"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 237.91 251.22"
     >

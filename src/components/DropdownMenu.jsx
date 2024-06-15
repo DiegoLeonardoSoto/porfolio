@@ -9,8 +9,6 @@ export const DropdownMenu = () => {
     i18n.getDataByLanguage(i18n.language).global.navbar.language[i18n.language],
   );
 
-  console.log(i18n.getDataByLanguage(i18n.language).global);
-
   const handleSetLanguages = (lang) => {
     i18n.changeLanguage(lang);
     setLanguages(i18n.getDataByLanguage(lang).global.navbar.language[lang]);

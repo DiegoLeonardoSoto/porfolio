@@ -15,7 +15,7 @@ export const Navbar = () => {
 
   return (
     <nav className="fixed start-0 top-0 z-50 w-full bg-white shadow-lg dark:bg-neutral-900 dark:shadow-neutral-700">
-      <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
+      <div className="container mx-auto flex flex-wrap items-center justify-between p-4">
         {/* logo */}
         <Link
           onClick={handleScrollToTop}
