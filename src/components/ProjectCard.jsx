@@ -23,10 +23,13 @@ export const ProjectCard = ({
       <p className="text-sm text-neutral-600">
         {description[i18next.language]}
       </p>
-      <div className="flex flex-wrap items-center gap-4 overflow-hidden text-sm text-neutral-700">
+      <div className="flex flex-wrap items-center gap-2 overflow-hidden text-sm text-neutral-700">
         {tags.map((tag) => {
           return (
-            <span key={tag} className="rounded-full bg-gray-200 px-3 py-2">
+            <span
+              key={tag}
+              className="rounded-lg bg-neutral-600 p-2 text-neutral-300"
+            >
               {tag}
             </span>
           );
