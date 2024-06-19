@@ -4,6 +4,7 @@ import {
   DotsBackground,
   LinesProjectLeftDraw,
   LinesProjectRightDraw,
+  BirdDraw,
 } from "../assets";
 import { projects } from "../projects.json";
 import { ProjectCard } from "../components/ProjectCard";
@@ -27,7 +28,8 @@ export const Projects = () => {
 
       <ArrowProjectDraw />
 
-      <div className="mt-6 flex flex-col">
+      <div className="relative mt-6 flex flex-col">
+        <BirdDraw />
         <div className="flex items-center justify-center gap-4 md:justify-start">
           <p className="min-w-max text-2xl font-bold dark:text-white">
             {t("projects.types_project.personal_projects")}

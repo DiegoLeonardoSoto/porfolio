@@ -12,6 +12,7 @@ import {
   TechStackDraw,
   ToolsDraw,
   MailIcon,
+  CatDraw,
 } from "../assets";
 
 import { Link, TechStackBar, ToolBar } from "../components";
@@ -145,6 +146,7 @@ export const About = () => {
         <div className="relative col-span-4 mt-20">
           <TechStackBar />
           <TechStackDraw />
+          <CatDraw />
         </div>
 
         <div className="relative col-span-4 mt-20 md:mt-6">

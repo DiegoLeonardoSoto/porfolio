@@ -2,7 +2,7 @@ export const SubTitleLine = ({ children }) => {
   return (
     <div className="flex w-[110%] flex-wrap justify-evenly gap-2">
       <svg
-        className="w-5"
+        className="w-5 md:w-9"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 37.24 11.93"
       >
@@ -13,7 +13,7 @@ export const SubTitleLine = ({ children }) => {
       </svg>
       {children}
       <svg
-        className="w-5"
+        className="w-5 md:w-9"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 37.24 11.93"
       >
