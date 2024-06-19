@@ -135,7 +135,7 @@ export const About = () => {
                 name={"Email"}
                 icon={<MailIcon />}
                 hoverStyle="after:bg-red-600 hover:bg-red-600"
-                href="mailto:leonardo.soto123@hotmail.com"
+                href="mailto:diegosoto.dev@outlook.com"
               />
             </div>
 
