@@ -6,7 +6,6 @@ import global_es from "./translations/es/global.json";
 import "./index.css";
 import i18next from "i18next";
 import { I18nextProvider } from "react-i18next";
-import { MouseContextProvider } from "./context/MouseContextProvider.jsx";
 
 i18next.init({
   intererpolation: { scapeValue: false },
@@ -24,9 +23,7 @@ i18next.init({
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <I18nextProvider i18n={i18next}>
-      <MouseContextProvider>
-        <App />
-      </MouseContextProvider>
+      <App />
     </I18nextProvider>
   </React.StrictMode>,
 );

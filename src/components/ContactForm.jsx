@@ -1,11 +1,11 @@
 import {
   GithubIcon,
-  LinkedinIcon,
   SendIcon,
-  WhatsappIcon,
   MailContactIcon,
   ClipContactIcon,
   UserContactIcon,
+  LinkedInIcon,
+  WhatsAppIcon,
 } from "../assets";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
@@ -110,11 +110,11 @@ export const ContactForm = () => {
           href="https://www.linkedin.com/in/diego-soto-72a097238/"
           target="_blank"
         >
-          <LinkedinIcon />
+          <LinkedInIcon />
         </a>
 
         <a href="https://wa.me/542974326618" target="_blank">
-          <WhatsappIcon />
+          <WhatsAppIcon />
         </a>
       </div>
       <div className="w-full font-Roboto md:w-48">

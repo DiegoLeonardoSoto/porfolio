@@ -1,13 +1,12 @@
 import { useTranslation } from "react-i18next";
 import {
   GithubIcon,
-  LinkedinIcon,
-  SendIcon,
+  LinkedInIcon,
   UnderlineName,
   AboutLineDown,
   AboutLineUp,
   SectionHighlight,
-  WhatsappIcon,
+  WhatsAppIcon,
   ContactMeDraw,
   TechStackDraw,
   ToolsDraw,
@@ -121,13 +120,13 @@ export const About = () => {
               />
               <Link
                 name={"LinkedIn"}
-                icon={<LinkedinIcon />}
+                icon={<LinkedInIcon />}
                 hoverStyle="after:bg-sky-600 hover:bg-sky-600"
                 href="https://www.linkedin.com/in/diego-soto-72a097238/"
               />
               <Link
                 name={"WhatsApp"}
-                icon={<WhatsappIcon />}
+                icon={<WhatsAppIcon />}
                 hoverStyle="after:bg-green-600  hover:bg-green-600"
                 href="https://wa.me/542974326618"
               />

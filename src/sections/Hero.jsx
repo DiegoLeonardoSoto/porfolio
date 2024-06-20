@@ -1,13 +1,7 @@
 import { useTranslation } from "react-i18next";
 import {
   UnderlineName,
-  Boat,
-  Bulb,
-  Click,
-  PaperPlane,
   SubTitleLine,
-  HeroNameArrow,
-  DownloadCVArrow,
   SkullDraw,
   SnailDraw,
   DuckHelmetDraw,
@@ -28,9 +22,6 @@ export const Hero = () => {
       <DotsBackground />
 
       <div className="relative z-40 flex flex-col items-center font-PermanentMarker">
-        {/*
-        <HeroNameArrow />
-        */}
         <h1 className="relative flex flex-col items-center">
           <span className="font-ShadowsIntoLightTwo text-2xl dark:text-white">
             {t("hero.greeting")}
@@ -45,10 +36,6 @@ export const Hero = () => {
         </SubTitleLine>
 
         <DownloadCvButton />
-
-        {/*
-        <DownloadCVArrow />
-        */}
       </div>
 
       <DragonDraw />
@@ -57,12 +44,6 @@ export const Hero = () => {
       <DuckHelmetDraw />
       <FlyDraw />
       <OniMaskDraw />
-      {/*
-      <Bulb />
-      <Click />
-      <Boat />
-      <PaperPlane />
-      */}
     </LayoutSection>
   );
 };
