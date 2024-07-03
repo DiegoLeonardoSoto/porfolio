@@ -11,6 +11,18 @@
       "img": "../images/journal-app.webp",
       "tags": ["React", "Javascript", "TailwindCSS", "Firebase"],
       "type": "personal-project"
+    },
+    {
+      "title": "Calendar App",
+      "description": {
+        "es": "Una aplicación fullstack de un calendario con gestión de eventos para crear, editar y borrar eventos, con la capacidad de crear y autenticar de usuarios.",
+        "en": "A calendar fullstack application with events management to create, edit, and delete events, with the ability to create and authenticate users."
+      },
+      "codeUrl": "https://github.com/DiegoLeonardoSoto/calendar-app",
+      "liveUrl": "https://calendar-backend-igvg.onrender.com/",
+      "img": "../images/calendar-app.webp",
+      "tags": ["React", "Javascript", "Bootstrap", "Node.js", "Express"],
+      "type": "personal-project"
     }
   ]
 }
