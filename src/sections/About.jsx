@@ -122,7 +122,7 @@ export const About = () => {
                 name={"LinkedIn"}
                 icon={<LinkedInIcon />}
                 hoverStyle="after:bg-sky-600 hover:bg-sky-600"
-                href="https://www.linkedin.com/in/diego-soto-72a097238/"
+                href="https://www.linkedin.com/in/diego-soto-dev/"
               />
               <Link
                 name={"WhatsApp"}
